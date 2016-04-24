@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="main.css"/>
 <h1>メッセージ一覧</h1>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -22,8 +22,10 @@
     <div class="col-sm-4">
       内容:<%= f.text_area :body %>
     </div>
-    <div class="col-sm-4 btn">
-      <%= f.submit class: "btn btn-sm btn-primary left-block" %>
-    </div>
+    <div class="col-sm-4">
+      <div class="btn">
+        <%= f.submit class: "btn btn-sm btn-primary left-block" %>
+      </div>
+       </div>
   </div>
 <% end %>
