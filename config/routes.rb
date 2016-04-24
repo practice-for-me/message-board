@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'messages#index'
+  root 'messages#index' #index action that messges conrollers run
   resources :messages 
 
   # The priority is based upon order of creation: first created -> highest priority.
