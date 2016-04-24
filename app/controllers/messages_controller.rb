@@ -1,6 +1,9 @@
 class MessagesController < ApplicationController
   def index
+    #モデルオブジェクトのインスタンスを代入
     @message = Message.new
+    #Messageをすべて取得する
+    @messages = Message.all
   end
   
   def create
@@ -11,5 +14,6 @@ class MessagesController < ApplicationController
   
   private
   def message_params
-    params.require(:message).permit8:name,:body)
+    params.require(:message).permit(:name,:body)
+  end
 end
