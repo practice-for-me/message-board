@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   root 'messages#index' #index action that messges conrollers run
-  resources :messages 
+  resources :messages
 
   # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
+  # See how all your routes lay 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
