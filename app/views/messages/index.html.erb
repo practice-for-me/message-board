@@ -12,37 +12,6 @@
   </div>
 </div>
 
-<h4>メッセージ入力</h4>
-  
-<%= form_for(@message) do |f| %>
+<% #部分テンプレートの読み込み %>
 
-<% if @message.errors.present? %>
-  <div class="alert alert-danger">
-    
-<<%= alert %>
-    <ul>
-        
-<% @message.errors.full_messages.each do |full_message| %>
-      <li>
-            
-<%= full_message %>
-      </li>
-<% end %>
-    </ul>
-  </div>
-  
-<% end %>
-
-<div class="container">
-  <div class="col-sm-4">
-    名前:<%=f.text_area :name ,:class => "form-control"%>
-  </div>
-  <div class="col-sm-4">
-    内容:<%= f.text_area :body,:class => "form-control" %>
-  </div>
-  <div class="col-sm-4">送信<br>
-    <%= f.submit class: "btn btn-sm btn-primary pull-left"%>
-  </div>
-</div>
-<% end %>
-</div>
+<%= render 'form' %>
