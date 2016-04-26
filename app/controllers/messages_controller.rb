@@ -32,6 +32,7 @@ class MessagesController < ApplicationController
   def destroy
     @message.destroy
     redirect_to root_path,notice:'メッセージを削除しました'
+  end
   
   private
   
