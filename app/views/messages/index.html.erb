@@ -7,11 +7,18 @@
     
 <% @messages.each do |message| %>
 
+name:
       <span class="label label-info">
 <%= message.name %>
 </span>
 
+body:
 <%= message.body %>
+
+age:
+<%= message.age %>
+
+option:
         (
 <%= link_to "edit" , edit_message_path(message)%>
 

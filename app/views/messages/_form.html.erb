@@ -31,9 +31,11 @@
   <div class="col-sm-4">
     内容:<%= f.text_area :body,:class => "form-control" %>
   </div>
-  <div class="col-sm-4">送信<br>
+  <div class="col-sm-4">
+    年齢:<%= f.text_area :age,:class => "form-control"%>
+  </div><br>
+  送信:
     <%= f.submit class: "btn btn-sm btn-primary pull-left"%>
-  </div>
 </div>
 <% end %>
 </div>
