@@ -24,17 +24,17 @@
   
 <% end %>
 
-
-  名前:
-  
-<%= f.text_field :name %>
-
-
-  内容:
-  
-<%= f.text_field :body %>
-
-  
-<%= f.submit class: "btn btn-sm btn-primary" %>
-
+<div class="container">
+  <div class="col-sm-4">
+    名前:<%=f.text_area :name ,:class => "form-control"%>
+  </div>
+  <div class="col-sm-4">
+    内容:<%= f.text_area :body,:class => "form-control" %>
+  </div>
+  <div class="col-sm-4">
+    年齢:<%= f.text_area :age,:class => "form-control"%>
+  </div><br>
+    <%= f.submit class: "btn btn-sm btn-primary pull-left"%>
+</div>
 <% end %>
+</div>
